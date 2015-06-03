@@ -2,6 +2,8 @@
 
 post to [ChatWork](http://www.chatwork.com/) before and after the specified task
 
+![example](img/example.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
