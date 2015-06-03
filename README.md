@@ -1,28 +1,51 @@
 # Capistrano::AroundChatwork
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/capistrano/around_chatwork`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+post to [ChatWork](http://www.chatwork.com/) before and after the specified task
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-around_chatwork'
+group :development do
+  gem 'capistrano-around_chatwork', require: false
+end
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install capistrano-around_chatwork
 
 ## Usage
 
-TODO: Write usage instructions here
+Capfile
+
+```ruby
+require "capistrano/around_chatwork"
+```
+
+config/deploy.rb
+
+```ruby
+set :chatwork_api_token, "YOUR_API_TOKEN"
+set :chatwork_room_id,   00000000
+
+around_chatwork "deploy"
+```
+
+## Customize
+If you want to customize starting and ending mesasge, set `starting_message` and `ending_message`
+
+example
+
+```ruby
+set :starting_message, -> {
+  "[info][title][#{fetch(:stage)}] :task_name: @#{fetch(:user)}[/title]started[/info]"
+}
+
+set :ending_message, -> {
+  "[info][title][#{fetch(:stage)}] :task_name: @#{fetch(:user)}[/title]done (:elapsed_time: sec)[/info]"
+}
+```
+
+* `:task_name:` is replaced to current task name (ex. `deploy`)
+* `:elapsed_time:` is replaced to elapsed time of task (ex. `1.234`)
 
 ## Development
 
