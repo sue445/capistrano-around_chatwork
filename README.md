@@ -1,5 +1,7 @@
 # Capistrano::AroundChatwork
 
+[![Gem Version](https://badge.fury.io/rb/capistrano-around_chatwork.svg)](http://badge.fury.io/rb/capistrano-around_chatwork)
+
 post to [ChatWork](http://www.chatwork.com/) before and after the specified task
 
 ![example](img/example.png)
