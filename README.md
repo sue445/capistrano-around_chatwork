@@ -50,8 +50,8 @@ set :ending_message, -> {
 }
 ```
 
-* `:task_name:` is replaced to current task name (ex. `deploy`)
-* `:elapsed_time:` is replaced to elapsed time of task (ex. `1.234`)
+* `:task_name:` is replaced to current task name (e.g. `deploy`)
+* `:elapsed_time:` is replaced to elapsed time of task (e.g. `1.234`)
 
 ## Development
 
