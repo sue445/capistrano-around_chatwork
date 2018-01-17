@@ -36,7 +36,7 @@ around_chatwork "deploy"
 ```
 
 ## Customize
-If you want to customize starting and ending mesasge, set `starting_message` and `ending_message`
+If you want to customize starting and ending message, set `starting_message` and `ending_message`
 
 example
 
