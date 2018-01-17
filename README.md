@@ -36,10 +36,9 @@ around_chatwork "deploy"
 ```
 
 ## Customize
-If you want to customize starting and ending message, set `starting_message` and `ending_message`
+If you want to customize messages, set `starting_message`, `ending_message` and `failure_message`
 
-example
-
+### Example
 ```ruby
 set :starting_message, -> {
   "[info][title][#{fetch(:stage)}] :task_name: @#{fetch(:user)}[/title]started[/info]"
@@ -48,10 +47,22 @@ set :starting_message, -> {
 set :ending_message, -> {
   "[info][title][#{fetch(:stage)}] :task_name: @#{fetch(:user)}[/title]done (:elapsed_time: sec)[/info]"
 }
+
+set :failure_message, -> {
+  <<-MSG
+[info][title][#{fetch(:stage)}] :task_name: @#{fetch(:user)}[/title]failed (:elapsed_time: sec)
+:error_inspect:
+:error_backtrace:[/info]
+  MSG
+}
 ```
 
+### Variables
 * `:task_name:` is replaced to current task name (e.g. `deploy`)
 * `:elapsed_time:` is replaced to elapsed time of task (e.g. `1.234`)
+* `:error_message:` is replaced to error message (i.e. `Exception#message`) if task is failed
+* `:error_inspect:` is replaced to error inspected message (i.e. `Exception#inspect`) if task is failed
+* `:error_backtrace:` is replaced to error backtrace (i.e. `Exception#backtrace`) if task is failed
 
 ## Development
 
