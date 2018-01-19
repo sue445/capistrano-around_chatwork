@@ -1,6 +1,12 @@
 # Changelog
 ## Unreleased
-[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.0...master)
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.1...master)
+
+## 1.0.1
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.0...v1.0.1)
+
+* Skip notify when message is empty
+  * https://github.com/sue445/capistrano-around_chatwork/pull/4
 
 ## 1.0.0
 [full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v0.2.0...v1.0.0)
