@@ -4,6 +4,8 @@ require "cha"
 module Capistrano
   module AroundChatwork
     def self.format_message(message:, task_name:, elapsed_time: 0, error: nil)
+      return "" unless message
+
       formatted_message = message.
         gsub(":task_name:", task_name).
         gsub(":elapsed_time:", sprintf("%5.3f", elapsed_time))
@@ -19,6 +21,8 @@ module Capistrano
     end
 
     def self.post_chatwork(message)
+      return if message.empty?
+
       client = Cha.new(api_token: fetch(:chatwork_api_token))
       client.create_room_message(fetch(:chatwork_room_id), message)
     end
