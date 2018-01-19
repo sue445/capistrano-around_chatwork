@@ -57,6 +57,15 @@ set :failure_message, -> {
 }
 ```
 
+When these are falsy (e.g. `nil` or `false`) or empty string (e.g. `""`), notification is skipped.
+
+e.g.
+
+```ruby
+set :starting_message, nil
+set :ending_message, ""
+```
+
 ### Variables
 * `:task_name:` is replaced to current task name (e.g. `deploy`)
 * `:elapsed_time:` is replaced to elapsed time of task (e.g. `1.234`)
