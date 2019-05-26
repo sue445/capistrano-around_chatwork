@@ -2,7 +2,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/capistrano-around_chatwork.svg)](http://badge.fury.io/rb/capistrano-around_chatwork)
 [![Code Climate](https://codeclimate.com/github/sue445/capistrano-around_chatwork/badges/gpa.svg)](https://codeclimate.com/github/sue445/capistrano-around_chatwork)
-[![Dependency Status](https://gemnasium.com/sue445/capistrano-around_chatwork.svg)](https://gemnasium.com/sue445/capistrano-around_chatwork)
 
 post to [ChatWork](http://www.chatwork.com/) before and after the specified task
 
