@@ -1,6 +1,12 @@
 # Changelog
 ## Unreleased
-[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.1...master)
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.2...master)
+
+## 1.0.2
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.1...v1.0.2)
+
+* Enable MFA requirement for gem releasing
+  * https://github.com/sue445/capistrano-around_chatwork/pull/5
 
 ## 1.0.1
 [full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.0...v1.0.1)
