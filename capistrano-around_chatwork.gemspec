@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "capistrano", ">= 3.0.0"
-  spec.add_dependency "cha", ">= 1.2.0"
+  spec.add_dependency "chatwork"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
