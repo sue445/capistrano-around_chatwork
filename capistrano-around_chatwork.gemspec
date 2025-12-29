@@ -33,6 +33,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "capistrano", ">= 3.0.0"
   spec.add_dependency "chatwork"
 
+  spec.add_development_dependency "bcrypt_pbkdf"
   spec.add_development_dependency "bundler"
+  spec.add_development_dependency "dotenv"
+  spec.add_development_dependency "ed25519"
   spec.add_development_dependency "rake"
 end
