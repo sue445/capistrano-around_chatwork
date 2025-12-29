@@ -19,6 +19,10 @@ jobs:
     strategy:
       fail-fast: false
 
+      # NOTE: Workaround for ChatWork API Rate limit
+      # ref. https://developer.chatwork.com/docs/endpoints
+      max-parallel: 2
+
       matrix:
         ruby:
           - "2.6"
