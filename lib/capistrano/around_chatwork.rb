@@ -1,5 +1,5 @@
 require "capistrano/around_chatwork/version"
-require "cha"
+require "chatwork"
 
 module Capistrano
   module AroundChatwork
@@ -23,8 +23,8 @@ module Capistrano
     def self.post_chatwork(message)
       return if message.empty?
 
-      client = Cha.new(api_token: fetch(:chatwork_api_token))
-      client.create_room_message(fetch(:chatwork_room_id), message)
+      client = ChatWork::Client.new(api_key: fetch(:chatwork_api_token))
+      client.create_message(room_id: fetch(:chatwork_room_id), body: message)
     end
   end
 end
