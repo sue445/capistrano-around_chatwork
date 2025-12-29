@@ -1,6 +1,14 @@
 # Changelog
 ## Unreleased
-[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.2...master)
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v2.0.0...master)
+
+## [2.0.0](https://github.com/sue445/capistrano-around_chatwork/releases/tag/v2.0.0)
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.3...v2.0.0)
+
+* **[BREAKING CHANGE]** :bomb: Migrate to chatwork gem
+  * https://github.com/sue445/capistrano-around_chatwork/pull/12
+* **[BREAKING CHANGE]** :bomb: Requires Ruby 3.2+
+  * https://github.com/sue445/capistrano-around_chatwork/pull/14
 
 ## [1.0.3](https://github.com/sue445/capistrano-around_chatwork/releases/tag/v1.0.3)
 [full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.2...v1.0.3)
