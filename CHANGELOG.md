@@ -2,6 +2,12 @@
 ## Unreleased
 [full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.2...master)
 
+## [1.0.3](https://github.com/sue445/capistrano-around_chatwork/releases/tag/v1.0.3)
+[full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.2...v1.0.3)
+
+* Release gem from GitHub Actions
+  * https://github.com/sue445/capistrano-around_chatwork/pull/6
+
 ## 1.0.2
 [full changelog](https://github.com/sue445/capistrano-around_chatwork/compare/v1.0.1...v1.0.2)
 
