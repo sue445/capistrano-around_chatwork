@@ -1,6 +1,7 @@
 # Capistrano::AroundChatwork
 
 [![Gem Version](https://badge.fury.io/rb/capistrano-around_chatwork.svg)](http://badge.fury.io/rb/capistrano-around_chatwork)
+[![test](https://github.com/sue445/capistrano-around_chatwork/actions/workflows/test.yml/badge.svg)](https://github.com/sue445/capistrano-around_chatwork/actions/workflows/test.yml)
 [![Maintainability](https://qlty.sh/gh/sue445/projects/capistrano-around_chatwork/maintainability.svg)](https://qlty.sh/gh/sue445/projects/capistrano-around_chatwork)
 
 post to [ChatWork](http://www.chatwork.com/) before and after the specified task
