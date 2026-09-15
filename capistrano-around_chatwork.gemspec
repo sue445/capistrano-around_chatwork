@@ -38,4 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "dotenv"
   spec.add_development_dependency "ed25519"
   spec.add_development_dependency "rake"
+
+  # FIXME: workaround for https://github.com/sue445/capistrano-around_chatwork/issues/41
+  spec.add_development_dependency "json", "< 3"
 end
